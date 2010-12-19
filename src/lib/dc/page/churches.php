@@ -7,7 +7,7 @@
 	require_once('PASL/Web/Template/Type/Token.php');
 	require_once('PASL/Web/Template/Type/Code.php');
 	
-	class dc_Page_Aboutus extends dc_Page
+	class dc_Page_Churches extends dc_Page
 	{
 		public function __construct()
 		{
@@ -18,7 +18,7 @@
                         $DB = dc_DB::singleton();
 			
 			// Gather Data
-			$query = $DB->query('SELECT post_title,post_content FROM wp_posts WHERE ID=86 LIMIT 1');
+			$query = $DB->query('SELECT post_title,post_content FROM wp_posts WHERE ID=336 LIMIT 1');
 			$query_result = $DB->fetchAll($query);
 			
 			$content['content'] = nl2br($query_result[0]['post_content']);
