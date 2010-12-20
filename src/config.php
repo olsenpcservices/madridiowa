@@ -21,13 +21,19 @@
 	//////////////////////////////////
 	// Define goodies	        	//
 	//////////////////////////////////
-	DEFINE('DB_USERNAME', 'madridiowa');
-	DEFINE('DB_PASSWORD', 't1g3r5');
-	DEFINE('DB_HOST', 'localhost');
-	DEFINE('DB_NAME', 'madridiowa');
-	DEFINE('DSN', 'mysql://madridiowa:t1g3r5@localhost/madridiowa');
+	//DEFINE('DB_USERNAME', 'madridiowa');
+	//DEFINE('DB_PASSWORD', 't1g3r5');
+	//DEFINE('DB_HOST', 'localhost');
+	//DEFINE('DB_NAME', 'madridiowa');
+	//DEFINE('DSN', 'mysql://madridiowa:t1g3r5@localhost/madridiowa');
 	
-	DEFINE('DEFAULT_PAGE', 'laborday');
+	DEFINE('DB_USERNAME', 'madridww');
+	DEFINE('DB_PASSWORD', 'lkgu3547');
+	DEFINE('DB_HOST', 'mysql.netins.net');
+	DEFINE('DB_NAME', 'wp_madridiowa');
+	DEFINE('DSN', 'mysql://madridww:lkgu3547@mysql.netins.net/wp_madridiowa');
+	
+	DEFINE('DEFAULT_PAGE', 'home');
 	dc_Theme::SetTheme('default');
 
 	if($_SERVER['REQUEST_URI'] == '/')

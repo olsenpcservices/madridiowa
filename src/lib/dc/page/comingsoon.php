@@ -7,7 +7,7 @@
 	require_once('PASL/Web/Template/Type/Token.php');
 	require_once('PASL/Web/Template/Type/Code.php');
 	
-	class dc_Page_Laborday extends dc_Page
+	class dc_Page_ComingSoon extends dc_Page
 	{
 		public function __construct()
 		{
@@ -18,7 +18,7 @@
                         $DB = dc_DB::singleton();
 			
 			// Gather Data
-			$query = $DB->query('SELECT post_title,post_content FROM wp_posts WHERE ID=2 LIMIT 1');
+			$query = $DB->query('SELECT post_title,post_content FROM wp_posts WHERE ID=646 LIMIT 1');
 			$query_result = $DB->fetchAll($query);
 			
 			$content['content'] = nl2br($query_result[0]['post_content']);
@@ -26,7 +26,7 @@
 			
 			// Page template
 			$Page = new PASL_Web_Template_Type_Token;
-			$Page->SetFile('themes/default/template/pages/laborday.html');
+			$Page->SetFile('themes/default/template/pages/general.html');
 			$Page->SetVariables($content);
 			
 			// Set the content
